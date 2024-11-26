@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html{
+  width: 100%;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  padding-top: 30px;
+  text-align: center;
+}
+.ini_btn {
+  transition: 0.3s;
+  padding-bottom: 40px;
+}
+
+.ini_btn:hover {
+  transform: scale(1.04);
+}
+.main {
+  display: flex;
+  height: 100%;
+  padding-left: 40px;
+}
+
+.card_button {
+  border: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  color: #cf0a14;
+  background-color: #e7cfab;
+  justify-content: space-between;
+  height: 116px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 5px;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  
+}
+
+.cartao:hover {
+  transform: scale(1.05);
+}
+
+.imagem_cartao {
+  width: 190px;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+} 
+.texto_intro{
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.texto_cartao{
+  font-size: 16px;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #e7cfab;
+  bottom: 0;
+  position: fixed;
+}
+@media(max-width:1200px){
+  .cartao {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 3px;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  .imagem_cartao {
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .texto_cartao{
+    font-size: 14px;
+  }
+  .texto_intro{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  
+  }
+
+}
+
+@media(max-width:990px) {
+  /* .card_button {
+    border: 3px;
+    width: 100px;
+    height: 150px;
+  } */
+  .cartao {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 3px;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+  .imagem_cartao {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .texto_cartao{
+    font-size: 12px;
+  }
+
+  .texto_intro{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+  
+  }
+
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo_dutra.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior -->
+  <header>
+    <div style="display: flex; align-items: end; width: 100%;">
+      <a href="../index.html" style="color: #cf0a14; text-decoration: none">
+        <h1>Receitas.Dutra</h1>
+      </a>
+    </div>
+    <div>
+      <img src="../img/logo.png" alt="" style="height: 116px; width: 112px" />
+
+    </div>
+  </header>
+  <!-- Fim da barra superior -->
+    <div class="login-container">
+        <img class="logo_dutra" src="../img/logo_dutra.png" alt="">
+        <form>
+            <label for="username">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            
+            <button class="entrar" id="entrar_btn" onclick="realizarLogin()" type="submit">Entrar</button>
+            <main style="height: 20px;"></main>
+            <a href="../index.html">Cancelar</a>
+        </form>
+    </div>
+    <!-- Barra infeior -->
+    <footer>
+        <h3>©2024</h3>
+      </footer>
+      <!-- Fim da Barra infeior -->
+       <script src="../js/login.js">
+       </script>
+       
+</body>
+</html> 

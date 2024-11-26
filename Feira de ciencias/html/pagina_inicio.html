@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas.Dutra</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo_dutra.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="js" href="../json/lista.json" />
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <header>
+    <div style="display: flex; align-items: end; width: 100%;">
+      <a href="../index.html" style="color: #cf0a14; text-decoration: none">
+        <h1>Receitas.Dutra</h1>
+      </a>
+    </div>
+    <div>
+      <img src="../img/logo.png" alt="" style="height: 116px; width: 112px" />
+
+    </div>
+  </header>
+  <!-- Fim da barra superior -->
+  <!-- Inicio da parte interna da pagina -->
+  <main style="height: 20px"></main>
+  <!-- Titulo -->
+  <div style="padding-bottom: 20px; font-size: auto;">
+    Qual tipo de receita gostaria de fazer?
+  </div>
+  <h3>Categorias:</h3>
+  <!-- div de receitas e categorias -->
+  <div class="container" style="margin-bottom: 90px">
+  <div style="  width: 100%;
+  border-bottom: 1px solid #000000; margin-top: 20px;"></div>
+    <div>
+      <div
+        x-data="{ 
+          receitas: [], 
+          categorias: [], 
+          filtroCategoria: 0,
+          abrirReceita: null,
+          carregarReceitas() {
+            fetch('../json/lista.json')
+            .then(response => response.json())
+            .then(data => this.receitas = data.receitas);
+          },
+          carregarCategorias() {
+            fetch('../json/lista.json')
+              .then(response => response.json())
+              .then(data => this.categorias = data.categorias);
+          },
+          filtrarReceitas() {
+            return this.receitas.filter(receita => {
+              return this.filtroCategoria === 0 || parseInt(receita.id_categoria) === parseInt(this.filtroCategoria);
+            });
+          },
+          limparFiltros() {
+            this.filtroCategoria = 0;
+          },
+          pegarReceita(id) {
+            this.abrirReceita = this.abrirReceita === id ? null : id;
+          },
+        }"
+        x-init="carregarCategorias(); carregarReceitas();"
+      >
+        <!-- card categorias -->
+        <div>
+          <div>
+            <div class="row row-cols-3 row-cols-md-5">
+              <!-- todas as receitas -->
+              <!-- gerar categorias -->
+              <template x-for="categoria in categorias" :key="categoria.id">
+                <div class="coluna py-3">
+                  <!-- div de categorias -->
+                  <div
+                    class="cartao"
+                    :style="categoria.id === filtroCategoria ? categoria.bgcolor : categoria.bgcolor + '; opacity: 0.5;'"
+                    @click="filtroCategoria = categoria.id"
+                  >
+                    <img class="imagem_cartao" :src="categoria.img" alt="" />
+                    <div class="texto_cartao" style="padding-top: 12px" x-text="categoria.nome"></div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+        <!-- fim div de categorias -->
+        <div style="  width: 100%;
+  border-bottom: 1px solid #000000;"></div>
+        <!-- card de receita -->
+         <div style="display: flex; flex-direction: column; align-items: center;">
+           <h3>Receitas:</h3>
+
+         </div>
+        <div >
+          <div>
+            <div class="row row-cols-3 row-cols-md-5">
+              <!-- gerar receitas -->
+              <template x-for="receita in filtrarReceitas()" :key="receita.id">
+                <div class="py-3">
+                  <div
+                    class="cartao"
+                    style="background-color: #e7cfab"
+                    @click="window.open('receita.html?id=' + receita.id, '_blank')"
+                  >
+                    <img class="imagem_cartao" :src="receita.imagem" alt="" />
+                    <div class="texto_cartao" x-text="receita.nome" style="padding-top: 12px"></div>
+                  </div>
+                  <!-- exibir receita -->
+                  <!-- <div
+                    x-show="abrirReceita === receita.id"
+                    class="receitaAberta"
+                  >
+                    <h3 x-text="receita.nome"></h3>
+                    <h4>Lista de ingredientes</h4>
+                    <ul>
+                      <template
+                        x-for="ingrediente in receita.lista_ingredientes"
+                        :key="ingrediente.id"
+                      >
+                        <li x-text="ingrediente.quantidade"></li>
+                      </template>
+                    </ul>
+    
+                    <h4>Modo de preparo:</h4>
+                    <ul>
+                      <template
+                        x-for="(passo, index) in receita.modo_preparo"
+                        :key="index"
+                      >
+                        <li x-text="`${index + 1}. ${passo}`"></li>
+                      </template>
+                    </ul>
+                  </div> -->
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fim div de receitas categorias-->
+  <!-- fim da parte interna da pagina -->
+  <!-- Barra infeior -->
+  <footer>
+    <h3>©2024</h3>
+  </footer>
+  <!-- Fim da Barra infeior -->
+</body>
+
+</html>

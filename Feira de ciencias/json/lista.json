@@ -1,0 +1,418 @@
+{
+  "categorias": [
+    {
+      "id": 0,
+      "nome": "Todas as receitas",
+      "bgcolor": "background-color: #e7cfab;",
+      "img": "../img/todas.png"
+    },
+    {
+      "id": 1,
+      "nome": "Cafés da Manhã",
+      "bgcolor": "background-color: #A09239;",
+      "img": "../img/cafe.png"
+    },
+    {
+      "id": 2,
+      "nome": "Almoços",
+      "bgcolor": "background-color: #ED7D00;",
+      "img": "../img/almoco.png"
+    },
+    {
+      "id": 3,
+      "nome": "Lanches",
+      "bgcolor": "background-color: #B32B13;",
+      "img": "../img/lanches.png"
+    },
+    {
+      "id": 4,
+      "nome": "Jantas",
+      "bgcolor": "background-color: #FFB600;",
+      "img": "../img/jantar.png"
+    }
+  ],
+  "receitas": [
+    {
+      "id": 1,
+      "id_categoria": 1,
+      "nome": "Omelete de Queijo",
+      "lista_ingredientes": [
+        { "id": 1, "quantidade": "2 unidades" },
+        { "id": 2, "quantidade": "1 pitada" },
+        { "id": 3, "quantidade": "50g" }
+      ],
+      "modo_preparo": [
+        "Bata os ovos em uma tigela.",
+        "Adicione sal e pimenta a gosto.",
+        "Aqueça uma frigideira com azeite e despeje os ovos batidos.",
+        "Adicione o queijo por cima e dobre a omelete ao meio quando começar a firmar.",
+        "Cozinhe até o queijo derreter e a omelete ficar dourada. Sirva quente."
+      ],
+      "imagem": "../img/img1.png"
+    },
+    {
+      "id": 2,
+      "id_categoria": 1,
+      "nome": "Panqueca Americana",
+      "lista_ingredientes": [
+        { "id": 4, "quantidade": "1 xícara" },
+        { "id": 5, "quantidade": "2 colheres de sopa" },
+        { "id": 7, "quantidade": "1 colher de chá" },
+        { "id": 6, "quantidade": "1 xícara" }
+      ],
+      "modo_preparo": [
+        "Misture a farinha, o açúcar e o fermento.",
+        "Adicione os ovos e o leite, mexendo até a massa ficar lisa.",
+        "Aqueça uma frigideira untada com manteiga e despeje porções da massa.",
+        "Cozinhe até surgirem bolhas na superfície, depois vire e cozinhe até dourar.",
+        "Sirva com mel ou frutas."
+      ],
+      "imagem": "../img/img2.png"
+    },
+    {
+      "id": 3,
+      "id_categoria": 2,
+      "nome": "Frango Grelhado com Legumes",
+      "lista_ingredientes": [
+        { "id": 8, "quantidade": "2 filés" },
+        { "id": 9, "quantidade": "1 xícara" },
+        { "id": 10, "quantidade": "1 cenoura média" },
+        { "id": 11, "quantidade": "1 abobrinha pequena" },
+        { "id": 12, "quantidade": "2 dentes" }
+      ],
+      "modo_preparo": [
+        "Tempere os filés de frango com sal, pimenta e alho.",
+        "Grelhe os filés em uma frigideira até dourarem dos dois lados.",
+        "Cozinhe os legumes (brócolis, cenoura e abobrinha) em água fervente até ficarem macios.",
+        "Sirva o frango com os legumes e um fio de azeite."
+      ],
+      "imagem": "../img/img3.png"
+    },
+    {
+      "id": 4,
+      "id_categoria": 2,
+      "nome": "Arroz à Grega",
+      "lista_ingredientes": [
+        { "id": 13, "quantidade": "2 xícaras" },
+        { "id": 14, "quantidade": "1 pimentão pequeno" },
+        { "id": 15, "quantidade": "1/2 xícara" },
+        { "id": 16, "quantidade": "1 cenoura pequena" }
+      ],
+      "modo_preparo": [
+        "Cozinhe o arroz como de costume.",
+        "Refogue os pimentões, a cenoura e as ervilhas em azeite.",
+        "Misture os legumes ao arroz cozido e tempere com sal.",
+        "Sirva como acompanhamento de carnes ou peixes."
+      ],
+      "imagem": "../img/img4.png"
+    },
+    {
+      "id": 5,
+      "id_categoria": 3,
+      "nome": "Sanduíche Natural",
+      "lista_ingredientes": [
+        { "id": 17, "quantidade": "2 fatias" },
+        { "id": 18, "quantidade": "3 fatias" },
+        { "id": 19, "quantidade": "2 folhas" },
+        { "id": 20, "quantidade": "2 rodelas" }
+      ],
+      "modo_preparo": [
+        "Passe maionese nas fatias de pão integral.",
+        "Coloque o peito de peru, alface e tomate.",
+        "Feche o sanduíche e corte ao meio.",
+        "Sirva com suco natural ou chá gelado."
+      ],
+      "imagem": "../img/img5.png"
+    },
+    {
+      "id": 6,
+      "id_categoria": 3,
+      "nome": "Bolo de Cenoura com Cobertura de Chocolate",
+      "lista_ingredientes": [
+        { "id": 21, "quantidade": "3 cenouras médias" },
+        { "id": 22, "quantidade": "1/2 xícara" },
+        { "id": 23, "quantidade": "2 xícaras" },
+        { "id": 24, "quantidade": "1 e 1/2 xícaras" },
+        { "id": 7, "quantidade": "1 colher de sopa" },
+        { "id": 25, "quantidade": "5 colheres de sopa" },
+        { "id": 26, "quantidade": "1/2 xícara" }
+      ],
+      "modo_preparo": [
+        "Bata no liquidificador as cenouras, os ovos e o óleo.",
+        "Misture à parte a farinha e o açúcar, depois adicione a mistura do liquidificador.",
+        "Acrescente o fermento e misture levemente.",
+        "Asse a massa em forno a 180°C por 40 minutos.",
+        "Para a cobertura, misture o leite, o chocolate em pó e o açúcar em uma panela, leve ao fogo e mexa até engrossar.",
+        "Despeje a cobertura sobre o bolo ainda quente."
+      ],
+      "imagem": "../img/img6.png"
+    },
+    {
+      "id": 7,
+      "id_categoria": 4,
+      "nome": "Sopa de Legumes",
+      "lista_ingredientes": [
+        { "id": 27, "quantidade": "2 batatas médias" },
+        { "id": 28, "quantidade": "1 cenoura grande" },
+        { "id": 29, "quantidade": "200g de abóbora" },
+        { "id": 30, "quantidade": "1 cebola média" }
+      ],
+      "modo_preparo": [
+        "Refogue a cebola e o alho em azeite.",
+        "Adicione os legumes picados (batata, cenoura, abóbora) e cubra com água.",
+        "Cozinhe até os legumes ficarem macios.",
+        "Bata no liquidificador para uma consistência cremosa, se preferir.",
+        "Tempere com sal e pimenta e sirva quente."
+      ],
+      "imagem": "../img/img7.png"
+    },
+    {
+      "id": 8,
+      "id_categoria": 4,
+      "nome": "Macarrão ao Alho e Óleo",
+      "lista_ingredientes": [
+        { "id": 31, "quantidade": "250g" },
+        { "id": 32, "quantidade": "3 dentes" },
+        { "id": 33, "quantidade": "4 colheres de sopa" },
+        { "id": 34, "quantidade": "50g" }
+      ],
+      "modo_preparo": [
+        "Cozinhe o macarrão até ficar al dente.",
+        "Em uma frigideira, refogue o alho no azeite até dourar.",
+        "Escorra o macarrão e misture com o alho refogado.",
+        "Tempere com sal e pimenta a gosto, e sirva com queijo ralado."
+      ],
+      "imagem": "../img/img8.png"
+    },
+    {
+      "id": 9,
+      "id_categoria": 1,
+      "nome": "Tapioca com Queijo e Presunto",
+      "lista_ingredientes": [
+        { "id": 35, "quantidade": "1/2 xícara" },
+        { "id": 18, "quantidade": "2 fatias" },
+        { "id": 3, "quantidade": "2 fatias" }
+      ],
+      "modo_preparo": [
+        "Aqueça uma frigideira e espalhe a goma de tapioca uniformemente.",
+        "Cozinhe até a tapioca começar a soltar das bordas.",
+        "Adicione o presunto e o queijo, depois dobre ao meio.",
+        "Cozinhe até o queijo derreter. Sirva quente."
+      ],
+      "imagem": "../img/img9.png"
+    },
+    {
+      "id": 10,
+      "id_categoria": 2,
+      "nome": "Escondidinho de Carne Moída",
+      "lista_ingredientes": [
+        { "id": 36, "quantidade": "300g" },
+        { "id": 27, "quantidade": "2 unidades" },
+        { "id": 30, "quantidade": "1 unidade" },
+        { "id": 32, "quantidade": "2 dentes" },
+        { "id": 34, "quantidade": "100g" }
+      ],
+      "modo_preparo": [
+        "Cozinhe as batatas até ficarem macias e amasse para fazer um purê.",
+        "Refogue a carne moída com cebola e alho, temperando com sal e pimenta.",
+        "Em um refratário, coloque uma camada de purê, depois a carne e finalize com mais purê.",
+        "Cubra com queijo ralado e leve ao forno para gratinar."
+      ],
+      "imagem": "../img/img10.png"
+    },
+    {
+      "id": 11,
+      "id_categoria": 2,
+      "nome": "Feijão Tropeiro",
+      "lista_ingredientes": [
+        { "id": 37, "quantidade": "2 xícaras" },
+        { "id": 38, "quantidade": "200g" },
+        { "id": 39, "quantidade": "1 cebola média" },
+        { "id": 40, "quantidade": "2 dentes de alho" },
+        { "id": 1, "quantidade": "3 ovos" },
+        { "id": 41, "quantidade": "1 xícara" }
+      ],
+      "modo_preparo": [
+        "Cozinhe o feijão até ficar macio e escorra.",
+        "Em uma frigideira grande, frite o bacon e adicione a cebola e o alho.",
+        "Misture o feijão, ovos cozidos e a farinha de mandioca.",
+        "Tempere com sal e pimenta e sirva com carne."
+      ],
+      "imagem": "../img/img11.png"
+    },
+    {
+      "id": 12,
+      "id_categoria": 3,
+      "nome": "Smoothie de Morango",
+      "lista_ingredientes": [
+        { "id": 42, "quantidade": "1 xícara de morangos" },
+        { "id": 43, "quantidade": "1/2 xícara de iogurte" },
+        { "id": 44, "quantidade": "1 colher de sopa de mel" }
+      ],
+      "modo_preparo": [
+        "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa.",
+        "Sirva imediatamente em copos."
+      ],
+      "imagem": "../img/img12.png"
+    },
+    {
+      "id": 13,
+      "id_categoria": 3,
+      "nome": "Wrap de Frango",
+      "lista_ingredientes": [
+        { "id": 8, "quantidade": "1 filé" },
+        { "id": 17, "quantidade": "1 folha" },
+        { "id": 19, "quantidade": "2 folhas de alface" },
+        { "id": 20, "quantidade": "2 rodelas de tomate" }
+      ],
+      "modo_preparo": [
+        "Grelhe o filé de frango e corte em tiras.",
+        "Em uma tortilha, coloque o frango, a alface e o tomate.",
+        "Enrole o wrap e sirva com molho de sua preferência."
+      ],
+      "imagem": "../img/img13.png"
+    },
+    {
+      "id": 14,
+      "id_categoria": 3,
+      "nome": "Salada de Frutas",
+      "lista_ingredientes": [
+        { "id": 45, "quantidade": "1 banana" },
+        { "id": 46, "quantidade": "1 maçã" },
+        { "id": 47, "quantidade": "1 laranja" },
+        { "id": 48, "quantidade": "1/2 xícara de uvas" }
+      ],
+      "modo_preparo": [
+        "Corte todas as frutas em pedaços pequenos.",
+        "Misture tudo em uma tigela e sirva com suco de laranja ou iogurte."
+      ],
+      "imagem": "../img/img14.png"
+    },
+    {
+      "id": 15,
+      "id_categoria": 4,
+      "nome": "Lasanha de Carne",
+      "lista_ingredientes": [
+        { "id": 49, "quantidade": "500g de carne moída" },
+        { "id": 50, "quantidade": "200g de massa de lasanha" },
+        { "id": 33, "quantidade": "4 colheres de sopa de azeite" },
+        { "id": 34, "quantidade": "150g de queijo mussarela" }
+      ],
+      "modo_preparo": [
+        "Refogue a carne moída com alho e cebola.",
+        "Em um refratário, faça camadas de massa, carne e queijo.",
+        "Cubra com queijo e leve ao forno para gratinar."
+      ],
+      "imagem": "../img/img15.png"
+    },
+    {
+      "id": 16,
+      "id_categoria": 4,
+      "nome": "Risoto de Cogumelos",
+      "lista_ingredientes": [
+        { "id": 13, "quantidade": "1 xícara de arroz arbóreo" },
+        { "id": 51, "quantidade": "200g de cogumelos" },
+        { "id": 52, "quantidade": "1/2 xícara de vinho branco" },
+        { "id": 53, "quantidade": "4 xícaras de caldo de legumes" }
+      ],
+      "modo_preparo": [
+        "Refogue os cogumelos e reserve.",
+        "Adicione o arroz na panela e refogue com azeite, depois acrescente o vinho.",
+        "Aos poucos, vá adicionando o caldo até o arroz ficar cremoso.",
+        "Misture os cogumelos no final e sirva."
+      ],
+      "imagem": "../img/img16.png"
+    },
+    {
+      "id": 17,
+      "id_categoria": 4,
+      "nome": "Sopa de Cebola",
+      "lista_ingredientes": [
+        { "id": 30, "quantidade": "4 cebolas grandes" },
+        { "id": 54, "quantidade": "1 litro de caldo de carne" },
+        { "id": 33, "quantidade": "2 colheres de azeite" },
+        { "id": 34, "quantidade": "100g de queijo parmesão ralado" }
+      ],
+      "modo_preparo": [
+        "Refogue as cebolas no azeite até caramelizar.",
+        "Adicione o caldo de carne e cozinhe por 20 minutos.",
+        "Sirva com queijo ralado por cima."
+      ],
+      "imagem": "../img/img17.png"
+    },
+    {
+      "id": 18,
+      "id_categoria": 4,
+      "nome": "Pizza de Mussarela",
+      "lista_ingredientes": [
+        { "id": 55, "quantidade": "1 massa pronta de pizza" },
+        { "id": 56, "quantidade": "200g de molho de tomate" },
+        { "id": 34, "quantidade": "300g de queijo mussarela" }
+      ],
+      "modo_preparo": [
+        "Espalhe o molho de tomate sobre a massa.",
+        "Cubra com o queijo mussarela.",
+        "Asse em forno pré-aquecido a 200°C por 15 minutos."
+      ],
+      "imagem": "../img/img18.png"
+    }
+  ],
+  "ingredientes": [
+    { "id": 1, "nome": "Ovos" },
+    { "id": 2, "nome": "Sal" },
+    { "id": 3, "nome": "Queijo" },
+    { "id": 4, "nome": "Farinha de trigo" },
+    { "id": 5, "nome": "Açúcar" },
+    { "id": 6, "nome": "Leite" },
+    { "id": 7, "nome": "Fermento" },
+    { "id": 8, "nome": "Filé de frango" },
+    { "id": 9, "nome": "Brócolis" },
+    { "id": 10, "nome": "Cenoura" },
+    { "id": 11, "nome": "Abobrinha" },
+    { "id": 12, "nome": "Alho" },
+    { "id": 13, "nome": "Arroz" },
+    { "id": 14, "nome": "Pimentão" },
+    { "id": 15, "nome": "Ervilhas" },
+    { "id": 16, "nome": "Cenoura" },
+    { "id": 17, "nome": "Pão integral" },
+    { "id": 18, "nome": "Peito de peru" },
+    { "id": 19, "nome": "Alface" },
+    { "id": 20, "nome": "Tomate" },
+    { "id": 21, "nome": "Cenoura" },
+    { "id": 22, "nome": "Óleo" },
+    { "id": 23, "nome": "Farinha de trigo" },
+    { "id": 24, "nome": "Açúcar" },
+    { "id": 25, "nome": "Chocolate em pó" },
+    { "id": 26, "nome": "Leite" },
+    { "id": 27, "nome": "Batata" },
+    { "id": 28, "nome": "Cenoura" },
+    { "id": 29, "nome": "Abóbora" },
+    { "id": 30, "nome": "Cebola" },
+    { "id": 31, "nome": "Macarrão" },
+    { "id": 32, "nome": "Alho" },
+    { "id": 33, "nome": "Azeite" },
+    { "id": 34, "nome": "Queijo ralado" },
+    { "id": 35, "nome": "Goma de tapioca" },
+    { "id": 36, "nome": "Carne moída" },
+    { "id": 37, "nome": "Feijão" },
+    { "id": 38, "nome": "Bacon" },
+    { "id": 39, "nome": "Cebola" },
+    { "id": 40, "nome": "Alho" },
+    { "id": 41, "nome": "Farinha de mandioca" },
+    { "id": 42, "nome": "Morangos" },
+    { "id": 43, "nome": "Iogurte" },
+    { "id": 44, "nome": "Mel" },
+    { "id": 45, "nome": "Banana" },
+    { "id": 46, "nome": "Maçã" },
+    { "id": 47, "nome": "Laranja" },
+    { "id": 48, "nome": "Uvas" },
+    { "id": 49, "nome": "Carne moída" },
+    { "id": 50, "nome": "Massa de lasanha" },
+    { "id": 51, "nome": "Cogumelos" },
+    { "id": 52, "nome": "Vinho branco" },
+    { "id": 53, "nome": "Caldo de legumes" },
+    { "id": 54, "nome": "Caldo de carne" },
+    { "id": 55, "nome": "Massa pronta de pizza" },
+    { "id": 56, "nome": "Molho de tomate" }
+  ]
+}
